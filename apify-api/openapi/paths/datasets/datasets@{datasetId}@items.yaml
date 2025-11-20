@@ -1,7 +1,7 @@
 get:
   tags:
     - Storage/Datasets
-  summary: Get items
+  summary: Get dataset items
   description: |
     Returns data stored in the dataset in a desired format.
 
@@ -367,6 +367,14 @@ get:
       schema:
         type: boolean
         example: false
+    - name: signature
+      in: query
+      description: Signature used to access the items.
+      required: false
+      style: simple
+      schema:
+        type: string
+        example: 2wTI46Bg8qWQrV7tavlPI
   responses:
     '200':
       description: ''
